@@ -31,7 +31,7 @@ client.on('ready', () => {
   getWFN() // Ping server once on startup
   // Ping the server and set the new status message every x minutes. (Minimum of 1 minute)
   // Keep at minimum 1 hour, no need to do it more frequently
-  setInterval(getWFN, Math.max(1, process.env.MC_PING_FREQUENCY || 1) * 60 * 1000)
+  setInterval(getWFN, Math.max(1, process.env.UPDATE_FREQUENCY || 1) * 60 * 1000)
 })
 
 // Login to Discord with your client's token
